@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+
+    <body>
+
+        <h1>My Map</h1>
+        <div id="map" style="width:50%;height:400px;"></div>
+        <script>
+            function initMap(){
+                // Map options
+                var options = {
+                    zoom:17,
+                    center:{lat:43.579510,lng:1.326532}
+                }
+
+                var map = new google.maps.Map(document.getElementById('map'), options);
+                var marker = new google.maps.Marker({position: {lat:43.579510,lng:1.326532}, map:map});
+                
+                var infoWindow = new google.maps.InfoWindow({content:'<h1>Local de répétition du Petit Train</h1>'});
+
+                marker.addListener('mouseover', function(){
+                    infoWindow.open(map, marker);
+                })
+            }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY63rWiVzSvYUsRQPMGxuI8n9BxLim-JM&callback=initMap"></script>
+    </body>
+</html>

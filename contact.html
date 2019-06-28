@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<!--
+	Synchronous by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Comédie Sans Fraise</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+		<div id="wrapper">
+			
+			<!-- Header -->
+			<div id="header">
+				<div class="container"> 
+					
+					<!-- Logo -->
+					<div id="logo">
+						<h1><a href="#">Comédie Sans Fraise</a></h1>
+						<span>Ateliers de théâtre amateur à Tournefeuille</span>
+					</div>
+
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="ateliers.html">Ateliers</a></li>
+							<li><a href="evenements.html">Evènements</a></li>
+							<li><a href="equipe.html">L'équipe</a></li>
+							<li class="active"><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+            <!-- /Header -->
+            
+
+            <!-- Actualité -->
+			<div id="page">
+				<div class="container">
+					<div class="row">
+						<div class="3u">
+							<section id="sidebar1">
+								<header>
+									<a href="#"><h2>actualité</h2></a>	
+								</header>
+								<ul class="style3">
+									<li class="first">
+										<p class="date"><a href="#">Juillet <b>06 & 07</b></a></p>
+										<p><a href="#">Week-end de spectacles au Phare de Tournefeuille</a></p>
+									</li>
+									<li>
+										<p class="date"><a href="#">Juillet <b>06 & 07</b></a></p>
+										<p><a href="#">Inscriptions pour l'année 2019/2020 au Phare. Permanance le matin.</a></p>
+									</li>
+									<li>
+										<p class="date"><a href="#">Septembre <b>06</b></a> </p>
+										<p><a href="#">Forum des associations à Tournefeuille. Venez vous inscire ou vous renseigner sur nos stages et ateliers.</a></p>
+									</li>
+								</ul>
+							</section>
+						</div>
+            <!-- /Actualité -->
+
+                        <div class="9u skel-cell-important">
+                            <section id="content" >
+                                <header>
+                                    <h2>Nous contacter</h2>
+                                </header>
+                                <p>Mail : <a href = mailto:comedieSansFraise@yahoo.fr> comedieSansFraise@yahoo.fr </a></p>
+                                <p>Tel : <a href ="#" > 06.72.42.16.66</a></p>
+                                <p><a href="https://www.facebook.com/comedie.sans.fraise/" ><img src="images/icons8-facebook-filled-32.png" alt="Comédie Sans Fraise"></a><br> <br> </p>
+                                <header>
+									<h2>Où nous sommes nous situés ?</h2>
+									<p>78 Avenue du Général de Gaulle, 31170 Tournefeuille<br></p>
+									<div id="map" style="width:100%;height:400px;"></div>
+									<script>
+										function initMap(){
+											// Map options
+											var options = {
+												zoom:17,
+												center:{lat:43.579510,lng:1.326532}
+											}
+
+											var map = new google.maps.Map(document.getElementById('map'), options);
+											var marker = new google.maps.Marker({position: {lat:43.579510,lng:1.326532}, map:map});
+											
+											var infoWindow = new google.maps.InfoWindow({content:'<h1>Local de répétition du Petit Train</h1>'});
+
+											marker.addListener('mouseover', function(){
+												infoWindow.open(map, marker);
+											})
+										}
+									</script>
+
+									<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY63rWiVzSvYUsRQPMGxuI8n9BxLim-JM&callback=initMap"></script>
+                                </header>
+
+                            </section>
+                        </div>
+                    </div>
+                </div>	
+            </div>
+
+			<!-- Copyright -->
+			<div id="copyright">
+                <div class="container">
+                    Réalisé par © Elisa Gabarrot <br>
+                    Css by : <a href="http://templated.co">TEMPLATED</a>
+                </div>
+            </div>
+                
+        </div>
+    </body>
+</html>
